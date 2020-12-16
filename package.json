@@ -1,0 +1,23 @@
+{
+  "name": "proyecto_digitales",
+  "version": "1.0.0",
+  "description": "proyecto final de electronica digital, el proyecto es sobre digitales mas IoT",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "author": "Benjamin Villegas",
+  "license": "MIT",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "mqtt": "^4.2.6",
+    "socket.io": "^3.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
