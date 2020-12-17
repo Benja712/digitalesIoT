@@ -27,21 +27,7 @@ module.exports = function (io) {
 
         socket.on('send password', data => {
             console.log('send password');
-            let data1 = '';
-            let data2 = '';
-            const code = conversion(data);
-            const arreglo = complete(code);
-            const msg = arreglo.split('_');
-            for(let i = 0; i < ((msg.length - 1)/2); i++){
-                data1 += msg[i];
-                data1 += '_';
-            }
-            for(let j = ((msg.length - 1)/2); j < (msg.length - 1); j++){
-                data2 += msg[j];
-                data2 += '_';
-            }
-            client.publish('password/send/part1', data1);
-            client.publish('password/send/part2', data2);
+            client.publish('password/send', data);
         });
     });
 }
