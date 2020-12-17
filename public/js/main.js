@@ -21,8 +21,7 @@ $(function () {
 
     $sendForm.submit(e => {
         e.preventDefault();
-        socket.emit('send password',$sendPass.val());
-        $sendPass.val('');
+        socket.emit('send password', 'ya ya jalo');
     });
 })
 
